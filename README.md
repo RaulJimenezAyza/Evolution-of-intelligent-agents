@@ -73,6 +73,8 @@ También puedes usar herramientas como `netcat` (si tu versión soporta UDP):
 echo -n "120;45" | nc -u 127.0.0.1 5005
 ```
 
+En caso de no tener ningún problema, los datos se enviarán automáticamente de la ejecución de Unity.
+
 ## Buenas prácticas
 - Asegúrate de que solo haya un productor enviando a `127.0.0.1:5005` si ejecutas la visualización en la misma máquina.
 - Si el simulador corre en otra máquina, actualiza `UDP_IP` en `live_graph.py` o envía a la IP de la máquina que ejecuta la visualización.
